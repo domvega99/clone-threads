@@ -30,10 +30,10 @@ export default async function Home() {
   return (
     <main className=' bg-black min-h-screen text-white pt-2 relative'>
       <div className='flex justify-center'>
-        <Image src={Logo} className=' w-20' alt='mountain'/>
+        <Image src={Logo} className=' w-20' alt='logo'/>
       </div>
       {data.map((post) => (  
-      <div>
+      <div key={post.id}>
         <div className='flex items-stretch px-5'>
           <div className='pr-5 flex flex-col items-center'>
             <div className='relative h-14 w-14 flex justify-center items-center'>
@@ -51,9 +51,8 @@ export default async function Home() {
                 <div className=' bg-white h-7 w-7 rounded-full absolute right-0 top-0'></div>
               </div>
             </div>
-          </div>
-          
-          <div className='pt-1' key={post.id}>
+          </div> 
+          <div className='pt-1'>
             <div className=' flex justify-between'>
               <div className='flex items-center'>
                 <h1 className=' text-base font-medium'>dominic</h1>
@@ -69,7 +68,7 @@ export default async function Home() {
             <p className=' text-sm font-light mt-2'>{post.title}</p>
             <p className=' text-sm font-light mt-2'>{post.body}</p>
             <div className=' mt-2'>
-              <Image src={Mountain} className=' rounded'/>
+              <Image src={Mountain} className=' rounded' alt='mountain'/>
             </div>
             <div className='flex my-5 w-32 justify-between'>
               <div>
