@@ -30,7 +30,7 @@ export default async function Home() {
   return (
     <main className=' bg-black min-h-screen text-white pt-2 relative'>
       <div className='flex justify-center'>
-        <Image src={Logo} className=' w-20'/>
+        <Image src={Logo} className=' w-20' alt='mountain'/>
       </div>
       {data.map((post) => (  
       <div>
