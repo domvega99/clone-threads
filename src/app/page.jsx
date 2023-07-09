@@ -30,7 +30,7 @@ export default async function Home() {
   return (
     <main className=' bg-black min-h-screen text-white pt-2 relative'>
       <div className='flex justify-center'>
-        <Image src={Logo} className=' w-20' alt='logo'/>
+        <Image src={Logo} className=' w-20' alt="Logo"/>
       </div>
       {data.map((post) => (  
       <div key={post.id}>
@@ -68,7 +68,7 @@ export default async function Home() {
             <p className=' text-sm font-light mt-2'>{post.title}</p>
             <p className=' text-sm font-light mt-2'>{post.body}</p>
             <div className=' mt-2'>
-              <Image src={Mountain} className=' rounded' alt='mountain'/>
+              <Image src={Mountain} className=' rounded' alt="Mountain"/>
             </div>
             <div className='flex my-5 w-32 justify-between'>
               <div>
