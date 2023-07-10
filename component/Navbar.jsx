@@ -7,29 +7,29 @@ import { HiOutlineUser } from "react-icons/hi2";
 import Link from 'next/link';
 const Navbar = () => {
   return (
-    <ul className='flex justify-between'>
+    <ul className='flex justify-between text-gray-500'>
       <li>
-        <Link href="/" className=' text-gray-500 hover:text-white'>
+        <Link href="/" className='hover:text-white'>
           <HiMiniHome size={40}/>
         </Link>
       </li>
       <li>
-        <Link href="/search" className=' text-gray-500 hover:text-white'>
+        <Link href="/search" className='hover:text-white'>
           <LuSearch size={40} />
         </Link>
       </li>
       <li>
-        <Link href="" className=' text-gray-500 hover:text-white'>
+        <Link href="" className='hover:text-white'>
           <PiArrowSquareOut size={40}/>
         </Link>
       </li>
       <li>
-        <Link href="" className=' text-gray-500 hover:text-white'>
+        <Link href="" className='hover:text-white'>
           <AiOutlineHeart size={40}/>
         </Link>
       </li>
       <li>
-        <Link href="" className=' text-gray-500 hover:text-white'>
+        <Link href="" className='hover:text-white'>
           <HiOutlineUser size={40}/>
         </Link>
       </li>
