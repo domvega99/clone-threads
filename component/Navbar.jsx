@@ -9,12 +9,12 @@ const Navbar = () => {
   return (
     <ul className='flex justify-between'>
       <li>
-        <Link href="" className=' text-gray-500 hover:text-white'>
+        <Link href="/" className=' text-gray-500 hover:text-white'>
           <HiMiniHome size={40}/>
         </Link>
       </li>
       <li>
-        <Link href="" className=' text-gray-500 hover:text-white'>
+        <Link href="/search" className=' text-gray-500 hover:text-white'>
           <LuSearch size={40} />
         </Link>
       </li>

@@ -44,7 +44,7 @@ export default async function Home() {
                     <AiOutlinePlus color='black' size={10}/>
                 </div>
               </div>
-              <div className=' h-full border rounded-full border-neutral-700 my-2'></div>
+              <div className=' h-full border-l rounded-full border-neutral-700 my-2'></div>
               <div className='relative h-14 w-14 flex justify-center items-center'>
                 <div className=' rounded-full h-12 w-12 flex justify-center'>
                   <div className=' bg-white h-4 w-4 rounded-full absolute bottom-0'></div>
@@ -93,10 +93,10 @@ export default async function Home() {
           <div className=' w-full border border-neutral-600 mb-5 mt-2'></div>
         </div>
         ))}
-      <div className='sticky bottom-0 px-5 py-3 bg-black'>
-        <Navbar/>
+        <div className='sticky bottom-0 px-5 py-3 bg-black'>
+          <Navbar/>
+        </div>
       </div>
-    </div>
     </main>
   )
 }
