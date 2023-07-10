@@ -61,11 +61,11 @@ const Search = async () => {
                 </div>
             </div>
             ))}
-            <div className='sticky bottom-0 px-5 py-3 bg-black'>
-                <Navbar/>
-            </div>
+            
         </div>
-        
+        <div className='sticky bottom-0 px-5 py-3 bg-black'>
+            <Navbar/>
+        </div>
     </main>
   )
 }
