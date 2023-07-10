@@ -28,9 +28,9 @@ const Search = async () => {
                 ></input>
             </div>
             {users.map((user) => (
-            <div className='flex flex-col'>
+            <div className='flex flex-col' key={user.id}>
                 <div className=' text-white'>
-                    <div className='flex mt-4 justify-between' key={user.id}>
+                    <div className='flex mt-4 justify-between' >
                         <div className='flex items-start '>
                             <div className='w-10 h-10 bg-white rounded-full'></div>
                             <div className='flex flex-col ml-5'>
