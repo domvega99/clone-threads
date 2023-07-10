@@ -93,7 +93,7 @@ export default async function Home() {
           <div className=' w-full border border-neutral-600 mb-5 mt-2'></div>
         </div>
         ))}
-      <div className=' sticky bottom-0 px-5 py-3 bg-black'>
+      <div className=' sticky bottom-0 px-5 py-3 text-gray-600 bg-black'>
         <Navbar />
       </div>
     </div>
