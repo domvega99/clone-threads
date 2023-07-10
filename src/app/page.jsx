@@ -44,7 +44,7 @@ export default async function Home() {
                     <AiOutlinePlus color='black' size={10}/>
                 </div>
               </div>
-              <div className=' h-full border-2 rounded-full border-neutral-700 my-2'></div>
+              <div className=' h-full border rounded-full border-neutral-700 my-2'></div>
               <div className='relative h-14 w-14 flex justify-center items-center'>
                 <div className=' rounded-full h-12 w-12 flex justify-center'>
                   <div className=' bg-white h-4 w-4 rounded-full absolute bottom-0'></div>
