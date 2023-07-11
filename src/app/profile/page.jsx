@@ -59,7 +59,7 @@ const Profile = () => {
         </div>
         
       </div>
-      <div className='sticky bottom-0 px-5 py-3 bg-black '>
+      <div className='sticky bottom-0 px-5 py-3 bg-black text-gray-500'>
           <Navbar/>
       </div>
     </div>

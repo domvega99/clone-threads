@@ -7,7 +7,7 @@ import { HiOutlineUser } from "react-icons/hi2";
 import Link from 'next/link';
 const Navbar = () => {
   return (
-    <ul className='flex justify-between text-gray-500 '>
+    <ul className='flex justify-between'>
       <div className='hover:text-white'>
       <li>
         <Link href="/" className='hover:text-white '>
