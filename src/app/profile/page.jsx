@@ -81,7 +81,7 @@ const Profile = () => {
       <div className=' md:w-2/4'>
         <div className=''>
           {profile.map((user) => (
-          <div className='text-white p-5 relative min-h-screen'>
+          <div className='text-white p-5 relative min-h-screen' key={user.id}>
             <div className='flex justify-between'>
               <div>
                 <BsGlobe2 size={28}/>
@@ -95,7 +95,7 @@ const Profile = () => {
                 </div>
               </div>
             </div>
-            <div className='mt-5' key={user.id}>
+            <div className='mt-5'>
               <div>
                 <div className='flex justify-between items-center'>
                   <div>
@@ -141,8 +141,8 @@ const Profile = () => {
                 Replies
               </div>
             </div>
-            {threads.map((thread) => (
-            <div className='mt-5'>
+            {threads.map((thread, id) => (
+            <div className='mt-5' key={id}>
               <div className='flex text-md items-stretch'>
                 <div className='flex items-center flex-col'>
                   <div className='w-10 h-10 bg-white rounded-full flex'>
