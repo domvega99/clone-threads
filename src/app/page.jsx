@@ -29,12 +29,12 @@ export default async function Home() {
 
   return (
     <main className='bg-black flex justify-center'>
-      <div className=' min-h-screen text-white pt-2 relative md:w-2/4'>
+      <div className=' min-h-screen pt-2 relative md:w-2/4'>
         <div className='flex justify-center'>
           <Image src={Logo} className=' w-20' alt="Logo"/>
         </div>
         {data.map((post) => (  
-        <div key={post.id}>
+        <div key={post.id} className='text-white '>
           <div className='flex items-stretch px-5'>
             <div className='pr-5 flex flex-col items-center'>
               <div className='relative h-14 w-14 flex justify-center items-center'>

@@ -7,12 +7,14 @@ import { HiOutlineUser } from "react-icons/hi2";
 import Link from 'next/link';
 const Navbar = () => {
   return (
-    <ul className='flex justify-between text-gray-500'>
+    <ul className='flex justify-between text-gray-500 '>
+      <div className='hover:text-white'>
       <li>
-        <Link href="/" className='hover:text-white'>
+        <Link href="/" className='hover:text-white '>
           <HiMiniHome size={40}/>
         </Link>
       </li>
+      </div>
       <li>
         <Link href="/search" className='hover:text-white'>
           <LuSearch size={40} />
@@ -29,7 +31,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href="" className='hover:text-white'>
+        <Link href="profile" className='hover:text-white'>
           <HiOutlineUser size={40}/>
         </Link>
       </li>
