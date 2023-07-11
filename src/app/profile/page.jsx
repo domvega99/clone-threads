@@ -7,7 +7,7 @@ import Navbar from '../../../component/Navbar';
 const Profile = () => {
   return (
     <div className='bg-black'>
-      <div className='text-white p-5 min-h-screen relative'>
+      <div className='text-white p-5 relative min-h-screen md:w-2/4'>
         <div className='flex justify-between'>
           <div>
             <BsGlobe2 size={28}/>
@@ -57,6 +57,7 @@ const Profile = () => {
             Replies
           </div>
         </div>
+        
       </div>
       <div className='sticky bottom-0 px-5 py-3 bg-black '>
           <Navbar/>
