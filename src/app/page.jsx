@@ -46,7 +46,7 @@ export default async function Home() {
                 </div>
               </div>
             </div> 
-            <div className='pt-1'>
+            <div className='pt-1 w-full'>
               <div className=' flex justify-between'>
                 {profile.map((item, id) => (
                 <div className='flex flex-col' key={id}>
