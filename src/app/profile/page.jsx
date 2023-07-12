@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState, useEffect } from 'react'
 import { BsGlobe2 } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -12,70 +13,10 @@ import { HiOutlineArrowPath } from "react-icons/hi2";
 import { TiLocationArrowOutline } from "react-icons/ti";
 import Image from 'next/image';
 import Link from 'next/link';
-const profile = [
-  {
-    id: "1",
-    name: "Dominic Anuta Vega",
-    username: "hellodoomssss",
-    bio: "Web Developer / Data Analyst",
-    followers: "0",
-    github: "https://github.com/domvega99/",
-    linkedin: "https://www.linkedin.com/",
-  },
-];
+import {profile, threads} from '../../database';
 
-const threads = [
-  {
-    id: "1",
-    title: "Junior Web Developer, IT Support, Google ads Specialist",
-    company: "BOHOL DIGITAL",
-    location: "Philippines",
-    date: "2020-02 – 2021-04",
-    description : [
-      {list: "To maintain the software called SuiteCrm. (PHP Code)"},
-      {list: "To maintain the website stable, hosting, design and monitor the websites using WordPress (Elementor, Woocommerce)."},
-      {list: "To maintain and check the plugin and theme updates every day in Wordpress dashboard."},
-      {list: "To set up campaigns, develop keywords and execute a digital marketing strategy in Google Ads to help our client reach their goals."},
-      {list: "To maintain database by entering client’s information in CRM."},
-    ]
-  },
-  {
-    id: "2",
-    title: "IT Support,  Google ads Specialist, Data Analyst",
-    company: "BLOOMLOCAL",
-    location: "United Kingdom",
-    date: "2021-04 – 2023-01",
-    description : [
-      {list: "To test, maintain, monitor, and update the new software."},
-      {list: "To manage campaign and all the tools using in google ads that related to the needs, including landing pages, customer email list, audience, bids, and more."},
-      {list: "To ensure the product data and information is current and accurate."},
-      {list: "To update the order status in the system and entering orders to inspecting shipments to managing customer satisfaction."},
-      {list: "Generate invoices to add the supplier’s bill to the QuickBooks."},
-      {list: "Generate reports e.g. Sales, Conversion Data, Google Analytics, Google Sheets."},
-    ]
-  },
-  {
-    id: "3",
-    title: "Website Development",
-    company: "Freelance",
-    location: "Philippines",
-    date: "",
-    description : [
-      {list: "Full Stack Web Developer - Modern POS System",
-       skills: "(SASS, ReactJs, Firebase, and MUI)",
-       link: "https://github.com/domvega99/firstpos/"},
-      {list: "Project Front-End Web Developer - Hotel Booking System",
-       skills: "(Laravel, ReactJS) ",
-       link: "https://github.com/GeminiousDrigon/HotelPMS/"},
-      {list: "Junior Wordpress Develoer (Freelance Bloomlocal)",
-       skills: "(Wordpress, Elementor, Woocommerce)",
-       link: "https://bloomlocal.international/ and https://bloomlocal.com/"},
-    ]
-  },
-]
+const Profile = () => {  
 
-const Profile = () => {
-  
   return (
     <div className='bg-black md:flex md:justify-center'>
       <div className=' md:w-2/4'>
@@ -99,7 +40,7 @@ const Profile = () => {
               <div>
                 <div className='flex justify-between items-center'>
                   <div>
-                    <h1 className=' text-3xl font-semibold'>{user.name}</h1>
+                    <h1 className='text-2xl md:text-3xl font-semibold'>{user.name}</h1>
                     <div className='flex my-2'>
                       <p className=' text-md font-medium mr-2'>{user.username}</p>
                       <div className=' bg-neutral-600 px-2 rounded-full'>
@@ -129,9 +70,9 @@ const Profile = () => {
                 </div>
               </div>
             </div>
-            <div className='flex justify-between mt-5'>
-              <button className='border border-neutral-500 px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Edit profile</button>
-              <button className='border border-neutral-500 px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Share profile</button>
+            <div className='flex justify-between mt-5 text-sm'>
+              <button className='border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Edit profile</button>
+              <button className='border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Share profile</button>
             </div>
             <div className='mt-10 flex justify-between'>
               <div className=' flex justify-center w-1/2 border-b-2 border-white pb-3 font-semibold'>
