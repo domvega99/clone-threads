@@ -71,8 +71,8 @@ const Profile = () => {
               </div>
             </div>
             <div className='flex justify-between mt-5 text-sm'>
-              <button className='border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Edit profile</button>
-              <button className='border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Share profile</button>
+              <button className=' text-xs md:text-sm border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Edit profile</button>
+              <button className=' text-xs md:text-sm border border-neutral-500 px-10 md:px-14 py-2 rounded-xl font-medium hover:bg-neutral-900'>Share profile</button>
             </div>
             <div className='mt-10 flex justify-between'>
               <div className=' flex justify-center w-1/2 border-b-2 border-white pb-3 font-semibold'>

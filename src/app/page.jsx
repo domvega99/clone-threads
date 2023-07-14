@@ -66,7 +66,7 @@ export default async function Home() {
                   </div>
                 </div>
                 <p className=' text-sm font-light mt-2'>{post.title}</p>
-                <p className=' text-sm mt-2 pr-5'>{post.description}</p>
+                <p className=' text-sm mt-2'>{post.description}</p>
                 <div className='flex text-sm text-sky-600 flex-wrap my-2'>
                   {post.language.map((item, id) => (
                     <div key={id} className='mr-2'>
@@ -76,14 +76,14 @@ export default async function Home() {
                 </div>
                 <div className='text-xs text-sky-600'>
                   {post.github.map((item, id) => (
-                    <Link href={item} key={id} className='mr-2 my-2 flex flex-col'>
+                    <Link href={item} key={id} className='my-2 flex flex-col'>
                       {item}
                     </Link>
                   ))}
                 </div>
                 <div className='text-xs text-sky-600'>
                   {post.links.map((item, id) => (
-                    <Link href={item} key={id} className='mr-2 my-2 flex flex-col'>
+                    <Link href={item} key={id} className='my-2 flex flex-col'>
                       {item}
                     </Link>
                   ))}
