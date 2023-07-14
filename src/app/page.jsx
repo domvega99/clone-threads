@@ -26,7 +26,7 @@ export default async function Home() {
           <Image src={Logo} className=' w-20' alt="Logo"/>
         </div>
         {posts.map((post) => (  
-        <div key={post.id} className='text-white '>
+        <div key={post.id} className='text-white mb-20 '>
           <div className='flex items-stretch px-5'>
             <div className='pr-5 flex flex-col items-center'>
               <div className='relative h-14 w-14 flex justify-center items-center'>
@@ -46,7 +46,7 @@ export default async function Home() {
                 </div>
               </div>
             </div> 
-            <div className='pt-1 w-full'>
+            <div className='pt-1'>
               <div className=' flex justify-between'>
                 {profile.map((item, id) => (
                 <div className='flex flex-col' key={id}>
@@ -65,10 +65,10 @@ export default async function Home() {
                 </div>
               </div>
               <p className=' text-sm font-light mt-2'>{post.title}</p>
-              <p className=' text-sm mt-2'>{post.description}</p>
-              <div className='flex text-sm text-sky-600'>
+              <p className=' text-sm mt-2 pr-5'>{post.description}</p>
+              <div className='flex text-sm text-sky-600 flex-wrap my-2'>
                 {post.language.map((item, id) => (
-                  <div key={id} className='mr-2 my-2'>
+                  <div key={id} className='mr-2'>
                     @{item.name}
                   </div>
                 ))}
@@ -112,7 +112,7 @@ export default async function Home() {
           <div className=' w-full border border-neutral-600 mb-5 mt-2'></div>
         </div>
         ))}
-        <div className='sticky bottom-0 px-5 py-3 bg-black text-neutral-500 '>
+        <div className='fixed w-full bottom-0 px-5 py-3 bg-black text-neutral-500 md:w-2/4'>
           <Navbar/>
         </div>
       </div>

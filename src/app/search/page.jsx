@@ -18,7 +18,7 @@ const Search = async () => {
 
   return (
     <main className='bg-black md:flex md:justify-center'>
-        <div className='bg-black min-h-screen md:w-2/4 relative'>
+        <div className='bg-black min-h-screen md:w-2/4 relative mb-10'>
             <div className=' p-5  text-white'>
                 <h1 className=' text-3xl font-bold'>Search</h1>
                 <div className='mt-5 w-full h-8 rounded-md bg-neutral-500 text-neutral-300 flex items-center px-2'>
@@ -63,7 +63,7 @@ const Search = async () => {
                 </div>
                 ))}
             </div>
-            <div className='sticky bottom-0 px-5 py-3 bg-black text-gray-500 '>
+            <div className='fixed w-full bottom-0 px-5 py-3 bg-black text-gray-500 md:w-2/4'>
                 <Navbar/>
             </div>   
         </div>

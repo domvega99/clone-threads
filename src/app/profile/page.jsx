@@ -20,7 +20,7 @@ const Profile = () => {
   return (
     <div className='bg-black md:flex md:justify-center'>
       <div className=' md:w-2/4'>
-        <div className=''>
+        <div className='mb-10'>
           {profile.map((user) => (
           <div className='text-white p-5 relative min-h-screen' key={user.id}>
             <div className='flex justify-between'>
@@ -104,7 +104,7 @@ const Profile = () => {
                     <ul key={id}>
                       <li className=' text-sm mt-1 list-disc'>{item.list}</li>
                       <div className=' text-sm mt-1 text-neutral-400'>{item.skills}</div>
-                      <div className=' text-sm mt-1 text-red-400'>{item.link}</div>
+                      <div className=' text-xs mt-1 text-red-400 md:text-sm'>{item.link}</div>
                     </ul>
                   ))}
                   <div className='flex mt-10 w-32 justify-between'>
@@ -130,7 +130,7 @@ const Profile = () => {
           ))}
           
         </div>
-        <div className='sticky bottom-0 px-5 py-3 bg-black text-gray-500'>
+        <div className='fixed w-full bottom-0 px-5 py-3 bg-black text-gray-500 md:w-2/4'>
             <Navbar/>
         </div>
       </div>
