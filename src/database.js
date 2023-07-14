@@ -160,3 +160,54 @@ export const posts = [
     date: "",
   },
 ]
+
+export const skills = [
+  {
+    name: "PHP (Laravel)",
+    rate: 3,
+  },
+  {
+    name: "CSS, SCSS",
+    rate: 4,
+  },
+  {
+    name: "TailwindCSS",
+    rate: 3,
+  },
+  {
+    name: "HTML",
+    rate: 4,
+  },
+  {
+    name: "JAVA",
+    rate: 2,
+  },
+  {
+    name: "Javascript (ReactJs, NextJs)",
+    rate: 3,
+  },
+  {
+    name: "Adobe Photoshop, Adobe Illustrator, Adobe Premiere, After Effects",
+    rate: 4,
+  },
+  {
+    name: "Microsoft Excel, Google Spreadsheet (Advanced)",
+    rate: 4,
+  },
+  {
+    name: "Wordpress (Elementor Builder, Woocommerce)",
+    rate: 4,
+  },
+  {
+    name: "MySql, Sql",
+    rate: 3,
+  },
+  {
+    name: "Firebase",
+    rate: 3,
+  },
+  {
+    name: "Google Ads",
+    rate: 4,
+  },
+]

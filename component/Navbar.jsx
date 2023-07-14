@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href="" className='hover:text-white'>
+        <Link href="activity" className='hover:text-white'>
           <AiOutlineHeart size={40}/>
         </Link>
       </li>
