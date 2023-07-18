@@ -26,14 +26,22 @@ export default async function Home() {
           <Image src={Logo} className=' w-20' alt="Logo"/>
         </div>
         {posts.map((post) => (  
-        <div className='text-white flex items-start w-full p-5'>
-          <div>
+        <div className='text-white flex w-full p-5 items-stretch'>
+          <div className='flex flex-col items-center'>
             <div className='w-14 h-14 relative flex items-center justify-center'>
               <div className='w-12 h-12 rounded-full bg-white flex'>
                 <Image src={display} alt='profile' className='rounded-full'></Image>
               </div>
               <div className='w-6 h-6 rounded-full border-2 border-black bg-white absolute right-0 bottom-0 flex items-center justify-center'>
                 <AiOutlinePlus color='black' size={14}/>
+              </div>
+            </div>
+            <div className='h-full border-l border-l-neutral-500 my-2'></div>
+            <div className='relative h-14 w-14 flex justify-center items-center'>
+              <div className=' rounded-full h-12 w-12 flex justify-center'>
+                <div className=' bg-blue-400 h-4 w-4 rounded-full absolute bottom-0'></div>
+                <div className=' bg-red-400 h-5 w-5 rounded-full absolute left-0 top-3'></div>
+                <div className=' bg-violet-400 h-7 w-7 rounded-full absolute right-0 top-0'></div>
               </div>
             </div>
           </div>
@@ -78,6 +86,23 @@ export default async function Home() {
                     {item}
                   </Link>
                 ))}
+              </div>
+              <div className='flex my-5 w-32 justify-between'>
+                <div>
+                  <AiOutlineHeart size={25}/>
+                </div>
+                <div>
+                  <TbMessageCircle size={25}/>
+                </div>
+                <div>
+                  <HiOutlineArrowPath size={25}/>
+                </div>
+                <div>
+                  <TiLocationArrowOutline size={25}/>
+                </div>
+              </div>
+              <div className=''>
+                <p className=' text-sm text-neutral-600'>125 replies • View likes</p>
               </div>
             </div>
           </div>
