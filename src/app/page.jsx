@@ -109,7 +109,7 @@ export default async function Home() {
         </div>
         ))}
       </div>
-       <div className='fixed w-full bottom-0 px-5 py-3 bg-black text-neutral-500 md:w-2/4'>
+       <div className='fixed w-full bottom-0 px-5 py-3 bg-black text-gray-500 md:w-2/4'>
           <Navbar/>
         </div>
     </div>
