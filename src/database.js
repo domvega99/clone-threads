@@ -57,7 +57,7 @@ export const threads = [
        link: "github.com/GeminiousDrigon/HotelPMS/"},
       {list: "Junior Wordpress Develoer (Freelance Bloomlocal)",
        skills: "(Wordpress, Elementor, Woocommerce)",
-       link: "bloomlocal.international/ and https://bloomlocal.com/"},
+       link: "bloomlocal.international/ and bloomlocal.com/"},
       {list: "Portfolio Design ",
        skills: "(NextJs, TailwindCSS)",
        link: "github.com/domvega99/second-app"},
@@ -83,7 +83,7 @@ export const posts = [
       "github.com/domvega99/firstpos",
     ],
     links: [
-      "posproject-1f6a0.web.app/)",
+      "posproject-1f6a0.web.app/",
     ],
     img: [
       "",

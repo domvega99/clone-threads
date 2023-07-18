@@ -50,12 +50,12 @@ export default async function Home() {
               {profile.map((item, id) => (
                 <div key={id} className=''>
                   <div className='flex items-center'> 
-                    <h1 className=' text-lg'>{item.username}</h1>
+                    <h1 className=' text-sm md:text-lg'>{item.username}</h1>
                     <div className='w-4 h-4 bg-sky-500 rounded-full ml-1 flex items-center justify-center'>
                       <BsCheckLg size={12} color='black'/>
                     </div>
                   </div>
-                  <p className=' text-sm text-neutral-500 font-medium'>{item.name}</p>
+                  <p className=' text-xs md:text-sm text-neutral-500 font-medium'>{item.name}</p>
                 </div> 
               ))}
               <div className=' flex'>
