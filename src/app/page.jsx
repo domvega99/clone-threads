@@ -23,7 +23,7 @@ export default async function Home() {
     <div className='bg-black flex justify-center'>
       <div className=' min-h-screen pt-2 relative md:w-2/4 w-full mb-20'>
         <div className='flex justify-center'>
-          <Image src={Logo} className=' w-20' alt="Logo"/>
+          <Image src={Logo} className=' w-16 md:w-20' alt="Logo"/>
         </div>
         {posts.map((post, id) => (  
         <div className='text-white flex w-full p-5 items-stretch' key={id}>
@@ -87,6 +87,9 @@ export default async function Home() {
                   </Link>
                 ))}
               </div>
+               {/* <div className=' mt-2'>
+                  <Image src={Mountain} className=' rounded' alt="Mountain"/>
+                </div> */}
               <div className='flex my-5 w-32 justify-between'>
                 <div>
                   <AiOutlineHeart size={25}/>
