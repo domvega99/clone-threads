@@ -25,8 +25,8 @@ export default async function Home() {
         <div className='flex justify-center'>
           <Image src={Logo} className=' w-20' alt="Logo"/>
         </div>
-        {posts.map((post) => (  
-        <div className='text-white flex w-full p-5 items-stretch'>
+        {posts.map((post, id) => (  
+        <div className='text-white flex w-full p-5 items-stretch' key={id}>
           <div className='flex flex-col items-center'>
             <div className='w-14 h-14 relative flex items-center justify-center'>
               <div className='w-12 h-12 rounded-full bg-white flex'>
