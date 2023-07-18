@@ -28,11 +28,11 @@ export default async function Home() {
         {posts.map((post, id) => (  
         <div className='text-white flex w-full p-5 items-stretch' key={id}>
           <div className='flex flex-col items-center'>
-            <div className='w-14 h-14 relative flex items-center justify-center'>
-              <div className='w-12 h-12 rounded-full bg-white flex'>
+            <div className='w-14 h-14 relative flex justify-center'>
+              <div className='w-11 h-11 rounded-full bg-white flex'>
                 <Image src={display} alt='profile' className='rounded-full'></Image>
               </div>
-              <div className='w-6 h-6 rounded-full border-2 border-black bg-white absolute right-0 bottom-0 flex items-center justify-center'>
+              <div className='w-5 h-5 rounded-full border-2 border-black bg-white absolute right-0 bottom-0 flex items-center justify-center'>
                 <AiOutlinePlus color='black' size={14}/>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className='ml-5 w-full '>
+          <div className='ml-3 w-full '>
             <div className='flex justify-between'>
               {profile.map((item, id) => (
                 <div key={id} className=''>
