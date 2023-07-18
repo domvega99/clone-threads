@@ -1,3 +1,6 @@
+import POS1 from '../images/pos1.jpg';
+import POS2 from '../images/pos2.jpg';
+
 export const profile = [
   {
     id: "1",
@@ -83,7 +86,7 @@ export const posts = [
       "https://github.com/domvega99/firstpos",
     ],
     links: [
-      "https://posproject-1f6a0.web.app/)",
+      "https://posproject-1f6a0.web.app/",
     ],
     img: [
       "",
