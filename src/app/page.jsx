@@ -87,11 +87,11 @@ export default async function Home() {
                   </Link>
                 ))}
               </div>
-               <div className=' mt-2'>
+               {/* <div className=' mt-2'>
                 {post.img.map((item, id) => (
-                  <Image src={item} className=' rounded' alt={item} key={id}/>
+                  <Image src={item} className=' rounded' alt="asd" key={id} width={100} height={100}/>
                 ))}   
-              </div>
+              </div> */}
               <div className='flex my-5 w-32 justify-between'>
                 <div>
                   <AiOutlineHeart size={25}/>
