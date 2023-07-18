@@ -5,8 +5,8 @@ export const profile = [
     username: "hellodoomssss",
     bio: "Web Developer / Data Analyst",
     followers: "0",
-    github: "https://github.com/domvega99/",
-    linkedin: "https://www.linkedin.com/",
+    github: "github.com/domvega99/",
+    linkedin: "linkedin.com/in/dominic-vega-323b82172/",
   },
 ];
 
@@ -50,20 +50,20 @@ export const threads = [
       {
       list: "Full Stack Web Developer - Modern POS System",
       skills: "(SASS, ReactJs, Firebase, and MUI)",
-      link: "https://github.com/domvega99/firstpos/"
+      link: "github.com/domvega99/firstpos/"
       },
       {list: "Project Front-End Web Developer - Hotel Booking System",
        skills: "(Laravel, ReactJS) ",
-       link: "https://github.com/GeminiousDrigon/HotelPMS/"},
+       link: "github.com/GeminiousDrigon/HotelPMS/"},
       {list: "Junior Wordpress Develoer (Freelance Bloomlocal)",
        skills: "(Wordpress, Elementor, Woocommerce)",
-       link: "https://bloomlocal.international/ and https://bloomlocal.com/"},
+       link: "bloomlocal.international/ and https://bloomlocal.com/"},
       {list: "Portfolio Design ",
        skills: "(NextJs, TailwindCSS)",
-       link: "https://github.com/domvega99/second-app"},
+       link: "github.com/domvega99/second-app"},
       {list: "Frontend Threads Clone",
        skills: "(NextJs, TailwindCSS)",
-       link: "https://github.com/domvega99/clone-threads"},
+       link: "github.com/domvega99/clone-threads"},
     ]
   },
 ];
@@ -80,10 +80,10 @@ export const posts = [
     ],
     description: "Developed Web based Modern POS System using ReactJs and Firebase for the database.",
     github: [
-      "https://github.com/domvega99/firstpos",
+      "github.com/domvega99/firstpos",
     ],
     links: [
-      "https://posproject-1f6a0.web.app/)",
+      "posproject-1f6a0.web.app/)",
     ],
     img: [
       "",
@@ -102,7 +102,7 @@ export const posts = [
     ],
     description: "Developed a Thesis project Web based Hotel Booking System using ReactJs and Laravel for the backend.",
     github: [
-      "https://github.com/GeminiousDrigon/HotelPMS",
+      "github.com/GeminiousDrigon/HotelPMS",
     ],
     links: [
       "",
@@ -127,9 +127,9 @@ export const posts = [
       "",
     ],
     links: [
-      "https://bloomlocal.international/",
-      "https://bloomlocal.com/",
-      "https://smdiversbohol.com/",
+      "bloomlocal.international/",
+      "bloomlocal.com/",
+      "smdiversbohol.com/",
     ],
     img: [
       "",
@@ -146,12 +146,12 @@ export const posts = [
     ],
     description: "Developed portfolio websites.",
     github: [
-      "https://github.com/domvega99/second.app",
-      "https://github.com/domvega99/clone-threads",
+      "github.com/domvega99/second.app",
+      "github.com/domvega99/clone-threads",
     ],
     links: [
-      "https://portfolio-design-app.vercel.app/",
-      "https://clone-threads.vercel.app/",
+      "portfolio-design-app.vercel.app/",
+      "clone-threads.vercel.app/",
     ],
     img: [
       "",
