@@ -74,16 +74,16 @@ export default async function Home() {
                     </div>
                   ))}
                 </div>
-                <div className='text-xs text-sky-600'>
+                <div className='text-xs text-sky-400'>
                   {post.github.map((item, id) => (
-                    <Link href={item} key={id} className='my-2 flex flex-col'>
+                    <Link href={item} key={id} className='my-2 flex flex-col hover:text-sky-300'>
                       {item}
                     </Link>
                   ))}
                 </div>
-                <div className='text-xs text-sky-600'>
+                <div className='text-xs text-sky-400'>
                   {post.links.map((item, id) => (
-                    <Link href={item} key={id} className='my-2 flex flex-col'>
+                    <Link href={item} key={id} className='my-2 flex flex-col hover:text-sky-300'>
                       {item}
                     </Link>
                   ))}
