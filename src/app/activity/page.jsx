@@ -48,21 +48,21 @@ const Activity = () => {
                         ))}
                     </div>
                     <div className='flex my-5 w-32 justify-between'>
-                        <div>
-                            <AiOutlineHeart size={25}/>
+                        <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                            <AiOutlineHeart/>
                         </div>
-                        <div>
-                            <TbMessageCircle size={25}/>
+                        <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                            <TbMessageCircle/>
                         </div>
-                        <div>
-                            <HiOutlineArrowPath size={25}/>
+                        <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                            <HiOutlineArrowPath/>
                         </div>
-                        <div>
-                            <TiLocationArrowOutline size={25}/>
+                        <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                            <TiLocationArrowOutline/>
                         </div>
                     </div>
                     <div className=' mb-5'>
-                        <p className=' text-sm text-neutral-600'>125 replies • View likes</p>
+                        <p className=' text-sm text-neutral-600 hover:text-gray-500'>125 replies • View likes</p>
                     </div>
                 </div> 
             </div>          

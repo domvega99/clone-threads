@@ -53,11 +53,11 @@ const Profile = () => {
                   </div>
                 </div>
                 <p className='mb-2'>{user.bio}</p>
-                <div className='flex flex-col items-start text-sm text-neutral-500 font-semibold'>
-                  <button className='mb-2'>
+                <div className='flex flex-col items-start text-sm text-sky-400 font-semibold'>
+                  <button className='mb-2 hover:text-sky-300'>
                     <Link href={user.github}>{user.github}</Link>
                   </button>
-                  <button className='mb-2'>
+                  <button className='mb-2 hover:text-sky-300'>
                     <Link href={user.linkedin}>{user.linkedin}</Link>
                   </button>
                 </div>
@@ -104,22 +104,25 @@ const Profile = () => {
                     <ul key={id}>
                       <li className=' text-sm mt-1 list-disc'>{item.list}</li>
                       <div className=' text-sm mt-1 text-neutral-400'>{item.skills}</div>
-                      <div className=' text-xs mt-1 text-red-400 md:text-sm'>{item.link}</div>
+                      <div className=' text-xs mt-1 text-sky-400 md:text-sm hover:text-sky-300'>{item.link}</div>
                     </ul>
                   ))}
-                  <div className='flex mt-10 w-32 justify-between'>
-                    <div>
-                      <AiOutlineHeart size={25}/>
+                  <div className='flex mt-10 w-32 justify-between mb-2'>
+                    <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                        <AiOutlineHeart/>
                     </div>
-                    <div>
-                      <TbMessageCircle size={25}/>
+                    <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                        <TbMessageCircle/>
                     </div>
-                    <div>
-                      <HiOutlineArrowPath size={25}/>
+                    <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                        <HiOutlineArrowPath/>
                     </div>
-                    <div>
-                      <TiLocationArrowOutline size={25}/>
+                    <div className=' text-2xl hover:text-gray-500 hover:text-xl flex justify-center items-center w-8'>
+                        <TiLocationArrowOutline/>
                     </div>
+                  </div>
+                  <div className=''>
+                      <p className=' text-sm text-neutral-600 hover:text-gray-500'>125 replies • View likes</p>
                   </div>
                 </div> 
               </div>
